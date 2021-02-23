@@ -15,5 +15,6 @@ docker pull inseefrlab/spark:latest
 `inseefrlab/spark` can be deployed thanks to [Bitnami Helm chart](https://bitnami.com/stack/spark/helm) as follow:
 
 ```sh
+helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install my-spark bitnami/spark --set image.repository=inseefrlab/spark --set image.tag=latest
 ```
